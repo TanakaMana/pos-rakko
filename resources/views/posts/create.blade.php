@@ -3,12 +3,14 @@
 @section('content')
 <div class= "contents row">
   <div class= "container">
-    {{ Form::open(['url' => '/posts', 'method' => 'post']) }}
-      <h3>Post</h3>
-      <input placeholder="image url" type="text" name="image">
-      <textarea cols="30" rows="10" placeholder="text" type="text" name="post"></textarea>
-      <input type="submit" value="投稿する">
-    {{ Form::close() }}
+    <div class= "form-group">
+      {{ Form::open(['url' => '/posts', 'method' => 'post']) }}
+        <h3>Post</h3>
+        <input placeholder="image url" type="text" name="image" class="form-control">
+        <textarea cols="30" rows="10" placeholder="text" type="text" name="post" class="form-control"></textarea>
+        <input type="submit" value="投稿する" class="btn btn-default">
+      {{ Form::close() }}
+    </div>
   </div>
 </div>
 @endsection
