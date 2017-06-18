@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Requests;
+use App\Post;
+
 class PostsController extends Controller
 {
     /**
@@ -34,7 +37,14 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Post::create(
+            array(
+                'image' => '',
+                'post' => ''
+            )
+        );
+
+        return redirect('/')->with('message', '投稿が完了しました');
     }
 
     /**
