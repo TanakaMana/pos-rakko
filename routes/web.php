@@ -11,6 +11,6 @@
 |
 */
 
-Route::group(['namespace' => 'posts'], function () {
+Route::group(['namespace' => 'posts'], function() {
   Route::get('/', 'PostsController@index');
-};
+});
