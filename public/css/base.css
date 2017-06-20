@@ -1,0 +1,75 @@
+h3 {
+  font-family: "游ゴシック", "YuGothic";
+  text-align: center;
+}
+
+.rakko_post {
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  height: 400px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+}
+
+header {
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+
+body {
+  margin: 0;
+}
+
+div.contents.row form {
+  margin: 20px 0;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41,41,41,0.2);
+  background-color: white;
+  box-sizing: border-box;
+  width: 660px;
+}
+
+div.contents.row form input, div.contents.row form textarea {
+  width: 100%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+}
+
+.btn-default {
+  background-color: #ffb6c1;
+  color: #fff;
+  font-size: 16px;
+}
+
+.title {
+  color: #666666;
+  font-size: 28px;
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.post {
+  padding: 8px 20px;
+  font-size: 14px;
+  float: right;
+  border: 2px solid #ffb6c1;
+  color: #ffb6c1;
+  font-family: "游ゴシック", "YuGothic";
+  font-weight: bold;
+  margin: 0 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
