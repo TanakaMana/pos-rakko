@@ -5,7 +5,8 @@
     <title>ラッコのポスト</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="{{{asset('/css/bootstrap.min.css')}}}" rel="stylesheet" media="screen">
+    <link href="{{{asset('/sass/base.scss')}}}" rel="stylesheet" media="screen">
+    <link href="{{{asset('/css/custom.css')}}}" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
@@ -25,6 +26,8 @@
         </div>
       </nav>
     </header>
+
     @yield('content')
+
   </body>
 </html>
