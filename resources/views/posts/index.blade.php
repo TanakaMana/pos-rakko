@@ -1,7 +1,9 @@
 @extends('layout')
 
 @section('content')
-<div class="container">
-  <p>一覧</p>
-</div>
+  @foreach($posts as $post)
+    <div class="rakko_post" style="background-image: url({{ $post->image }});">
+      <p>{{ $post->post }}</p>
+    </div>
+  @endforeach
 @endsection
