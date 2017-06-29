@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Post;
+use Auth;
 
 class PostsController extends Controller
 {
@@ -44,12 +45,11 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        Post::create(
-            array(
-                'image' => $request->image,
-                'post' => $request->post
-            )
-        );
+        $post = new Post();
+        $post->image = $request->image;
+        $post->post = $request->post;
+        $post->user_id = Auth::user()->id;
+        $post->save();
 
         return redirect('/')->with('message', '投稿が完了しました');
     }
