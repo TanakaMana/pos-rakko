@@ -58,7 +58,7 @@
                                           <a href="{{ route('logout') }}"
                                               onclick="event.preventDefault();
                                                        document.getElementById('logout-form').submit();">
-                                              Logout
+                                              ログアウト
                                           </a>
 
                                           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -67,6 +67,8 @@
                                       </li>
                                   </ul>
                               </li>
+                              <a class="post" href="{{ route('posts.create') }}">投稿する
+                              </a>
                           @endif
                       </ul>
                   </div>
