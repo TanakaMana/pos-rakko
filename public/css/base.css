@@ -4,6 +4,10 @@ h3 {
   text-align: center;
 }
 
+a:hover {
+text-decoration: none;
+}
+
 .rakko_post {
   margin: 20px 0;
   padding: 30px;
