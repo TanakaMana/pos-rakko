@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-    protected $fillable = array('image', 'post');
+    protected $fillable = [
+        'image', 'post', 'user_id'
+    ];
+
+    public function post()
+    {
+        return $this->belongsTo('User');
+    }
 }
