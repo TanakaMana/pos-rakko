@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>ラッコのポスト</title>
+    <title>ラッコのぽすと</title>
 
     <!-- Bootstrap -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -31,7 +31,7 @@
 
                       <!-- Branding Image -->
                       <a class="navbar-brand" href="{{ url('/') }}">
-                          ラッコのポスト
+                          ラッコのぽすと
                       </a>
                   </div>
 
