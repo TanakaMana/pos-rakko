@@ -15,7 +15,7 @@ class UsersController extends Controller
         $name = Auth::user()->name;
         $posts = Post::where('user_id', Auth::user()->id);
 
-        return view('users.show')->with(array('name' => $name, 'posts' => $posts));
+        return view('users.show')->with($name, $posts);
     }
 
     public function edit()
