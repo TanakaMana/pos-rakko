@@ -18,3 +18,16 @@ Route::resource('users', 'UsersController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+$this->get('admin/login', 'AdminAuth\LoginController@showLoginForm')->name('admin.login');
+$this->post('admin/login', 'AdminAuth\LoginController@login');
+$this->post('admin/logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
+// Registration Routes...
+$this->get('admin/register', 'AdminAuth\RegisterController@showRegistrationForm')->name('admin.register');
+$this->post('admin/register', 'AdminAuth\RegisterController@register');
+// Password Reset Routes...
+$this->post('admin/password/email', 'AdminAuth\ForgotPasswordController@sendResetLinkEmail')->name('admin.password.email');
+$this->get('admin/password/reset', 'AdminAuth\ForgotPasswordController@showLinkRequestForm')->name('admin.password.request');
+$this->post('admin/password/reset', 'AdminAuth\ResetPasswordController@reset');
+$this->get('admin/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm')->name('admin.password.reset');
