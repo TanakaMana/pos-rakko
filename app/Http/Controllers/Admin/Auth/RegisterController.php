@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\AdminAuth;
+namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 
@@ -8,7 +8,7 @@ class RegisterController extends Controller
 {
     public function showRegistrationForm()
     {
-        return view('adminAuth.register');
+        return view('admin.auth.register');
     }
     protected function guard()
     {

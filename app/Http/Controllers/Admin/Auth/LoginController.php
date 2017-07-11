@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\AdminAuth;
+namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 
@@ -8,7 +8,7 @@ class LoginController extends Controller
 {
     public function showLoginForm()
     {
-        return view('adminAuth.login');
+        return view('admin.auth.login');
     }
     protected function guard()
     {
