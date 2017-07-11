@@ -20,9 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-$this->get('admin/login', 'AdminAuth\LoginController@showLoginForm')->name('admin.login');
-$this->post('admin/login', 'AdminAuth\LoginController@login');
-$this->post('admin/logout', 'AdminAuth\LoginController@logout')->name('admin.logout');
+$this->get('admin/login', 'Admin\Auth\LoginController@showLoginForm')->name('admin.login');
+$this->post('admin/login', 'Admin\Auth\LoginController@login');
+$this->post('admin/logout', 'Admin\Auth\LoginController@logout')->name('admin.logout');
 // Registration Routes...
-$this->get('admin/register', 'AdminAuth\RegisterController@showRegistrationForm')->name('admin.register');
-$this->post('admin/register', 'AdminAuth\RegisterController@register');
+$this->get('admin/register', 'Admin\Auth\RegisterController@showRegistrationForm')->name('admin.register');
+$this->post('admin/register', 'Admin\Auth\RegisterController@register');
